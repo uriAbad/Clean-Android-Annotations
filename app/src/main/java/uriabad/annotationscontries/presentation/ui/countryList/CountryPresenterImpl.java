@@ -56,7 +56,7 @@ public class CountryPresenterImpl implements CountryPresenter{
     @UiThread
     void showCountryCollectionInView(Collection<Country> countryCollection){
         final Collection<CountryModel> countryModelCollection = countryModelDataMapper
-                .transform(countryCollection);
+                .transform(null);
         countryListView.renderCountryList(countryModelCollection);
         //TODO:MIERDA
         //countryListView.hideLoading();
