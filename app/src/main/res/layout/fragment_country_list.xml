@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context="uriabad.annotationscontries.presentation.ui.countryList.CountryListFragment"
+             android:id="@+id/countryFragment">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rvCountries"
+        tools:listitem="@layout/card_country"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        />
+
+    <include layout="@layout/view_loader"/>
+
+    <include layout="@layout/view_retry"/>
+
+</FrameLayout>
